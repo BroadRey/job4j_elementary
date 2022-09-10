@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class ConverterTest {
 
     @Test
-    void whenConvert200RblThen3dot3333Euro() {
+    void whenConvert140RblThen2Euro() {
         float in = 140;
         float expected = 2;
         float out = Converter.rubleToEuro(in);
