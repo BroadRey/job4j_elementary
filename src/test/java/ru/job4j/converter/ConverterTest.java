@@ -22,13 +22,4 @@ class ConverterTest {
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
     }
-
-    @Test
-    public void whenConvertNegativeNumberThen0Dlr() {
-        float in = -1;
-        float expected = 0;
-        float result = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
-        Assert.assertEquals(expected, result, eps);
-    }
 }
