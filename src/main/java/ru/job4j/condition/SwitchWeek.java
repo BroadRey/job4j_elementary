@@ -3,7 +3,6 @@ package ru.job4j.condition;
 public class SwitchWeek {
     public static String nameOfDay(int day) {
         String name;
-
         switch (day) {
             case 1:
                 name = "Понедельник";
@@ -27,7 +26,6 @@ public class SwitchWeek {
                 name = "Ошибка";
                 break;
         }
-
         return name;
     }
 }
