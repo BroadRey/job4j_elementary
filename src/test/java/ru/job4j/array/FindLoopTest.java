@@ -20,4 +20,24 @@ public class FindLoopTest {
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenDiapasonHasNot8ThenMinus1() {
+        int[] data = new int[] {1, 2, 3, 4};
+        int el = 8;
+        int start = 1;
+        int finish = 3;
+        int expected = -1;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+    }
+
+    @Test
+    public void whenDiapasonHas6Then4() {
+        int[] data = new int[] {1, 2, 3, 4, 6, 8, 9, 10};
+        int el = 6;
+        int start = 2;
+        int finish = 4;
+        int expected = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+    }
 }
