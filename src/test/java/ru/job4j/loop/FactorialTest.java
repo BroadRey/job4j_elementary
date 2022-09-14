@@ -22,9 +22,9 @@ public class FactorialTest {
     }
 
     @Test
-    public void whenCalculateFactorialForNegative1Then0() {
-        int n = -1;
-        int expected = 0;
+    public void whenCalculateFactorialFor2Then2() {
+        int n = 2;
+        int expected = 2;
         int result = Factorial.calc(n);
         assertThat(result).isEqualTo(expected);
     }
